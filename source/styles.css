@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 100%;
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+#input {
+    background-color:#d3d3d3;
+    border:1px solid #efefef;
+        min-height: 120px;
+    overflow: hidden;
+    padding: 30px 20px 10px 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+.counter {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width:40%;
+}
+.col-full {
+    flex: 1;
+    width: 100vw;
+}
+
+.rules {
+    background-color: #fffdd0;
+    border: 1px solid #FFF759;
+    margin: 20px auto;
+    width: 90vw;
+}
+
+#error .msg {
+    background-color:#f30000;
+    border: 1px solid #e33333;
+    color: #000;
+    margin-bottom: 30px;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+#board {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+#board .row div:not(.warning){
+    background-color: lightskyblue;
+    border-bottom:1px solid black;
+    border-left:1px solid black;
+    border-top:1px solid black;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+}
+
+#board .row div:last-child {
+    border-right: 1px solid black;
+}
+
+#board .row {
+    display: flex;
+    height: 15px;
+}
+
+#board .row div.alive {
+    background-color: black;
+}
+
+#board div.warning {
+    background-color:white;
+    padding: 3px 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
